@@ -1,6 +1,6 @@
 ### [ aws vpc설계를 하다가 기존에 vpc는 front, api, admin당 하나씩 생성하게 되었다. ]
 
-각 front,api,admin을 vpc를 별도로 두는것이 궁금해서 찾아봤습니다.
+각 front,api,admin을 vpc를 별도로 두는것이 궁금해서 찾아봤습니다.</br>
 결론은 하나의 vpc에 front, api등을 private subnet으로 구분 지어서 진행하려고 합니다.
 
 </br>
