@@ -1,11 +1,11 @@
 # Traefik으로 container 기반 환경에서 reverse proxy 구성하기
 
 
-기존에 Nginx, Apache로 프록시하는데 고정된 정보로 했기에 별 다른 어려움이 없었다.
-컨테이너 기반의 환경에서 프록시를 하려면 고정된 IP가 아니기에 이를 해결해야하는 문제가 있다.
-이 문제를 해결하는 컨테이너 기반 환경에 적합한 소프트웨어를 찾고 알게되었다. <br>
+기존에 Nginx, Apache로 프록시하는데 고정된 정보로 했기에 별 다른 어려움이 없었습니다.
+컨테이너 기반의 환경에서 프록시를 하려면 고정된 IP가 아니기에 이를 해결해야하는 문제가 있습니다.
+이 문제를 해결하는 컨테이너 기반 환경에 적합한 소프트웨어를 찾고 알게되었습니다. <br>
 
-이는 **Traefik**으로 Edge Router라고 불리는 소프트웨어다.
+이는 **Traefik**으로 Edge Router라고 불리는 소프트웨어입니다.
 많은 기능을 갖고 있지만, 이번엔 기존 Nginx가 하던 역할인 Reverse Proxy를 Traefik으로 사용해보려고 합니다.  <br><br>
 
 
@@ -39,7 +39,6 @@
  ```yml
  entryPoints:
   # "http" 라는 80포트를 리스닝하는 entrypoint를 생성합니다
-  # reverse proxy할 포트번호가 되겠습니다
   http:
     address: :80
 
